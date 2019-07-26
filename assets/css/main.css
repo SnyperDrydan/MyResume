@@ -2457,6 +2457,7 @@ iframe {
   height: 80%; /* Full height */
   background: #fcfcfc; /* Fallback color */
   box-sizing: content-box;
+  overflow:   scroll;
    /* Black w/ opacity */
 }
 
@@ -2757,7 +2758,7 @@ textarea.input100 {
 [ Button hide form ]*/
 
 .contact100-btn-hide {
-  color: #4e5251;
+  color: #fff;
   font-size: 14px;
   z-index: 2;
   position: absolute;
@@ -2770,12 +2771,11 @@ textarea.input100 {
   align-items: center;
   width: 25px;
   height: 30px;
-  background-color: #fff;
+  background-color: #9da3a2;
   border: 1px solid #ececec;
   border-radius: 50%;
-  top: -15px;
-  right: -15px;
-
+  top: 0;
+  right: 0;
   -webkit-transition: all 0.4s;
   -o-transition: all 0.4s;
   -moz-transition: all 0.4s;
@@ -2815,6 +2815,11 @@ textarea.input100 {
   -ms-transform: translate(-50%, -50%);
   -o-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
+}
+
+.modal::-webkit-scrollbar {
+    width: 0px;
+    background: transparent; /* make scrollbar transparent */
 }
 
 .contact100-btn-show::before {
